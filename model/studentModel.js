@@ -1,6 +1,7 @@
+import '../config/db.js';
 import mongoose from 'mongoose';
 
-const student = mongoose.model('siswa', {
+ const student = mongoose.model('siswa', {
     nisn : String,
     nama : {
         type: String,
@@ -24,4 +25,5 @@ const student = mongoose.model('siswa', {
     }
 })
 
-module.exports = student;
+export default student;
+
